@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="cs">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Výběr filmů</title>
+    <link rel="stylesheet" href="CSS/films.css" />
+  </head>
+  <body>
+    <main class="films">
+      <a href="index.html" class="main-page-cta" id="main-page-cta"
+        >Úvodní strana</a
+      >
+      <label for="movie-select">Vyber film:</label>
+      <select id="movie-select" name="movie">
+        <option value="" selected disabled>Vyberte možnost</option>
+        <option value="girl">Girl</option>
+        <option value="boy">Boy</option>
+        <option value="avengers">Avengers</option>
+        <option value="horor">Horor</option>
+      </select>
+      <section id="results" class="results" aria-live="polite"></section>
+    </main>
+    <script src="js/films.js" defer></script>
+  </body>
+</html>

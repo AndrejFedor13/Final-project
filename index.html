@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="cs">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Netflix</title>
+    <link rel="stylesheet" href="CSS/style.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="top"></div>
+    <header class="header" id="main-header">
+      <div class="header-container">
+        <img
+          src="pictures/netflix-logo.png"
+          alt="Netflix logo"
+          class="netflix-logo-img"
+        />
+        <a href="form.html" class="registration-btn" id="registration-btn"
+          >Registrace</a
+        >
+      </div>
+    </header>
+    <main class="hero-section" id="hero-section">
+      <div class="hero-content" id="hero-content">
+        <h1 class="hero-title">
+          Neomezené sledování filmů, TV pořadů a dalšího obsahu
+        </h1>
+        <h2 class="hero-subtitle">Už od 239 Kč. Zrušte kdykoli.</h2>
+        <p class="hero-text">
+          Jste připraveni se dívat? Pro vytvoření nebo obnovení zadejte e-mail.
+        </p>
+        <form class="hero-form" id="hero-form">
+          <label for="hero-email" class="hero-label sr-only"
+            >E-mailová adresa</label
+          >
+          <input
+            type="email"
+            id="hero-email"
+            name="email"
+            class="hero-input"
+            placeholder="E-mailová adresa"
+            required
+          />
+          <button type="submit" class="hero-button" id="hero-button">
+            Začít
+          </button>
+        </form>
+      </div>
+    </main>
+    <section
+      class="movies-section"
+      aria-labelledby="recommended-title"
+      id="recommended"
+    >
+      <ul class="movies-list">
+        <li class="movies-item">
+          <img
+            src="pictures/avengers.jpg"
+            alt="Avenger: Infinity war - film poster"
+            class="movies-poster"
+            width="300"
+            height="450"
+            loading="lazy"
+            decoding="async"
+          />
+        </li>
+        <li class="movies-item">
+          <img
+            src="pictures/bugs-life.jpeg"
+            alt="A Bug's Life - film poster "
+            class="movies-poster"
+            width="300"
+            height="450"
+            loading="lazy"
+            decoding="async"
+          />
+        </li>
+        <li class="movies-item">
+          <img
+            src="pictures/thor.jpeg"
+            alt="Thor - film poster"
+            class="movies-poster"
+            width="300"
+            height="450"
+            loading="lazy"
+            decoding="async"
+          />
+        </li>
+      </ul>
+      <a href="films.html" class="movies-cta" id="movies-cta"
+        >Najít další filmy</a
+      >
+    </section>
+    <footer class="site-footer">
+      <nav class="site-footer-nav" aria-label="Užitečné odkazy">
+        <div class="site-footer-lists">
+          <ul class="site-footer-list">
+            <li><a href="#">Často kladené dotazy</a></li>
+            <li><a href="#">Vztahy s investory</a></li>
+            <li><a href="#">Jak se dívat</a></li>
+            <li><a href="#">Podnikové informace</a></li>
+            <li><a href="#">Právní oznámení</a></li>
+          </ul>
+
+          <ul class="site-footer-list">
+            <li><a href="#">Centrum zákaznické podpory</a></li>
+            <li><a href="#">Kariéra</a></li>
+            <li><a href="#">Podmínky používání</a></li>
+            <li><a href="#">Kontaktujte nás</a></li>
+            <li><a href="#">Uvádí jedině Netflix</a></li>
+          </ul>
+
+          <ul class="site-footer-list">
+            <li><a href="#">Účet</a></li>
+            <li><a href="#">Uplatněte dárkové poukazy</a></li>
+            <li><a href="#">Soukromí</a></li>
+            <li><a href="#">Test rychlosti</a></li>
+            <li><a href="#">Reklamy</a></li>
+          </ul>
+
+          <ul class="site-footer-list">
+            <li><a href="#">Pro média</a></li>
+            <li><a href="#">Koupit dárkové poukazy</a></li>
+            <li><a href="#">Nastavení souborů cookie</a></li>
+            <li><a href="#">Právní záruka</a></li>
+          </ul>
+        </div>
+      </nav>
+    </footer>
+    <a href="#top" class="back-to-top" id="backToTop" aria-label="Zpět nahoru">
+      <i class="fa-regular fa-circle-up"></i>
+    </a>
+    <script src="js/script.js" defer></script>
+  </body>
+</html>

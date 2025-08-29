@@ -1,0 +1,133 @@
+:root {
+  --background-main: #000000;
+  --main-red: rgb(214, 28, 28);
+  --main-text: #ffffff;
+  --registration-btn-hover: #f00202;
+  --footer-text: #564d4d;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 1) 10%,
+      rgba(0, 0, 0, 0.9) 50%,
+      rgba(0, 0, 0, 1) 100%
+    ),
+    url('../pictures/movies-background.jpeg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+
+.page-header {
+  background-color: var(--background-main);
+  width: 100%;
+  padding: 10px 10px;
+}
+
+.page-header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.netflix-logo-img {
+  height: 30px;
+}
+
+.int-page {
+  display: inline-block;
+  width: max-content;
+  background-color: var(--main-red);
+  color: var(--main-text);
+  padding: 6px 8px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.int-page:hover {
+  background-color: var(--registration-btn-hover);
+  transform: scale(1.05);
+}
+
+.form-section {
+  min-height: calc(100vh - 50px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.form-group input {
+  width: 100%;
+  max-width: 500px;
+  padding: 14px 16px;
+  font-size: 14px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  background-color: var(--background-main);
+  color: var(--main-text);
+  display: block;
+}
+
+.form-group input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 1000px rgba(0, 0, 0, 0.8) inset !important;
+  -webkit-text-fill-color: var(--main-text) !important;
+  caret-color: var(--main-text);
+  transition: background-color 9999s ease-in-out 0s !important;
+}
+
+.form-group input:-webkit-autofill:focus {
+  -webkit-box-shadow: 0 0 0 1000px rgba(0, 0, 0, 0.8) inset !important;
+  -webkit-text-fill-color: var(--main-text) !important;
+}
+
+input.valid {
+  border: 2px solid green;
+}
+input.invalid {
+  border: 2px solid red;
+}
+
+input:focus {
+  outline: none;
+}
+
+.form-btn {
+  display: inline-block;
+  background-color: var(--main-red);
+  color: var(--main-text);
+  width: 500px;
+  cursor: pointer;
+  padding: 8px;
+  font-size: 16px;
+  margin-top: 8px;
+}
+
+/* ====== RESPONZIVITA: FORMULÁŘ ======= */
+
+@media (max-width: 768px) {
+  .form-group input,
+  .form-btn {
+    width: 90%;
+    font-size: 15px;
+    padding: 12px 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .form-group input,
+  .form-btn {
+    width: 100%;
+    font-size: 14px;
+    padding: 10px 12px;
+  }
+}

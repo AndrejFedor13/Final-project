@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="cs">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registrace</title>
+    <link rel="stylesheet" href="CSS/form.css" />
+  </head>
+  <body>
+    <header class="page-header" id="site-header">
+      <div class="page-header-container">
+        <img
+          src="pictures/netflix-logo.png"
+          alt="Netflix logo"
+          class="netflix-logo-img"
+        />
+        <a href="index.html" class="int-page" id="int-page">Úvodní strana</a>
+      </div>
+    </header>
+    <section class="form-section">
+      <form class="registration-form" id="registration-form">
+        <div class="form-group">
+          <label for="first-name">Křestní jméno:</label>
+          <input
+            type="text"
+            id="first-name"
+            name="first-name"
+            placeholder="Křestní jméno"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="last-name">Příjmení:</label>
+          <input
+            type="text"
+            id="last-name"
+            name="last-name"
+            placeholder="Příjmení"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="email">Přihlašovací email:</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Příhlašovací email"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="password">Vaše heslo:</label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            placeholder="Vaše heslo"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="password2">Heslo znovu:</label>
+          <input
+            type="password"
+            id="password2"
+            name="password2"
+            placeholder="Heslo znovu"
+            required
+          />
+        </div>
+        <div>
+          <button class="form-btn" type="submit">Odeslat</button>
+        </div>
+      </form>
+    </section>
+    <script src="js/form.js" defer></script>
+  </body>
+</html>
